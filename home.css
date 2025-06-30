@@ -1,6 +1,6 @@
 /* Background Section */
 .bgimage {
-  background: url('ShanithNayanaXSIMMZCapturez-19.jpg') no-repeat center center/cover;
+  background: url('nayana.jpg') no-repeat center center/cover;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 1px 20px;
   z-index: 3;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .nav-list a {
-  color: rgb(15, 15, 15);
+  color: rgb(12, 12, 12);
   text-decoration: none;
   font-size: 20px;
 
@@ -57,7 +57,7 @@
 
 .nav-list a:hover {
   text-decoration: none;
-  color: gold;
+  color: rgb(106, 121, 231);
 }
 
 /* Hamburger */
