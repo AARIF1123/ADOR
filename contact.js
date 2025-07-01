@@ -16,4 +16,5 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   } else {
     alert("Please fill in all fields.");
   }
+  
 });

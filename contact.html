@@ -69,6 +69,100 @@
 
 
   </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll to Top</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome for up arrow -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 2000px; /* Just to make scrollable */
+      background-color: #fef9f4;
+    }
+
+    #scrollToTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: -70px;
+      width: 50px;
+      height: 50px;
+      background-color: #a57c4f;
+      color: white;
+      border: none;
+      border-radius: 35%;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: right 0.4s ease, opacity 0.3s ease;
+      opacity: 0;
+      z-index: 999;
+    }
+
+    #scrollToTopBtn.show {
+      right: 20px;
+      opacity: 1;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+      #scrollToTopBtn {
+        bottom: 30px;
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+      }
+
+      #scrollToTopBtn.show {
+        right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- <h1 style="text-align:center; padding-top: 150px;">Scroll Down</h1> -->
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add("show");
+      } else {
+        scrollToTopBtn.classList.remove("show");
+      }
+    });
+
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
 <script src="contact.js"></script>
 </body>
 </html>

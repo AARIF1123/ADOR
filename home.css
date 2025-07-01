@@ -1,4 +1,4 @@
-/* Background Section */
+
 .bgimage {
   background: url('nayana.jpg') no-repeat center center/cover;
   width: 100%;
@@ -17,7 +17,7 @@
   z-index: 2;
 } */
 
-/* Navbar floating above */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -32,7 +32,7 @@
   z-index: 3;
 }
 
-/* Navigation List */
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -60,7 +60,7 @@
   color: rgb(106, 121, 231);
 }
 
-/* Hamburger */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -75,7 +75,7 @@
   margin-right: 50px;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
   .nav-list {
     display: none;

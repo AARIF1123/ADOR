@@ -309,6 +309,7 @@
       cursor: pointer;
     }
 
+
     @media (max-width: 768px) {
       .nav-list {
         display: none;
@@ -392,4 +393,19 @@
       height: -5%;
       margin-top: 10%;
     }
-    }
+    /* #scrollToTopBtn {
+    bottom: 20px;
+    right: -60px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  #scrollToTopBtn.show {
+    right: 15px;
+  } */
+}
+
+
+
+  
