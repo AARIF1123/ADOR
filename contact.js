@@ -1,6 +1,10 @@
-document.getElementById('hamburger').addEventListener('click', function() {
-    const navList = document.querySelector('.nav-list');
-    navList.classList.toggle('active');
+
+const hamburger = document.getElementById('hamburger');
+const navList = document.querySelector('.nav-list');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navList.classList.toggle('active');
 });
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
