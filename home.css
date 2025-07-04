@@ -151,6 +151,21 @@
 .footer-links a:hover {
   color: rgb(5, 38, 202);
 }
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem; /* optional spacing */
+  padding: 3rem;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col:nth-child(1) { text-align: left; }
+.footer-col:nth-child(2) { text-align: center; }
+.footer-col:nth-child(3) { text-align: right; }
 
 @media (max-width: 768px) {
   .nav-list {
