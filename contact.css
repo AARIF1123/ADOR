@@ -266,6 +266,21 @@
   height: 100vh;
   position: relative;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  flex: 1;
+}
+
+footer.footer {
+  margin-top: auto;
+}
 
 
  
@@ -357,6 +372,7 @@
   background: #111;
   color: #eee;
   font-family: sans-serif;
+  margin-top: 60px;
 }
 .footer a { color: #eee; text-decoration: none; }
 
@@ -384,17 +400,6 @@
   margin-right: 0.5rem;
   color: rgb(46, 62, 230);
 }
-/* .social-icons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.social-icons img {
-  width: 24px;
-  filter: invert(1);
-  transition: opacity 0.3s;
-}
-.social-icons img:hover { opacity: 0.7; } */
 
 .footer-bottom {
   border-top: 1px solid #333;
@@ -456,35 +461,6 @@
     
   }
 
-  .nav-list {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    background-color: rgba(248, 240, 233, 0.85);
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
-  }
-  .nav-list.active {
-    max-height: 400px;
-  }
-  .nav-list li {
-    margin: 20px 0;
-  }
-
-  .bgimage {
-    margin-top: 40%;
-  }
-  .bgcolor {
-    background-color: #000000d8;
-  }
-  body {
-    background-color: rgba(248, 240, 233, 0.85);
-  }
-}
     section {
       padding: 140px 20px 40px 20px;
       text-align: center;
@@ -502,13 +478,13 @@
     }
 
     .form-container {
-      display: flex;
-      justify-content: center;
-      margin: 20px auto;
-      max-width: 500px;
-      margin-right: 5%;
-      margin-top: -30%;
-    }
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 500px;
+  padding: 20px;
+}
+
 
     #contactForm {
       display: flex;
@@ -534,10 +510,17 @@
       padding: 12px;
       cursor: pointer;
     }
+    
+    .map{
+      width: 10%;
+      height: -5%;
+      margin-top: 60%;
+      margin-left: 5%;
+    }
+  }
 
-
-    @media (max-width: 768px) {
-      .nav-list {
+   
+      /* .nav-list {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -554,9 +537,9 @@
       .nav-list.active {
         display: flex;
         transform: translateX(0);
-      }
+      } */
 
-      .hamburger {
+      /* .hamburger {
         display: flex;
       }
 
@@ -618,10 +601,11 @@
       width: 10%;
       height: -5%;
       margin-top: 10%;
+      margin-left: 5%;
     }
      .footer-bottom {
      flex-direction: column; text-align: center; gap: 0.5rem;
-   }
+   } */
     /* #scrollToTopBtn {
     bottom: 20px;
     right: -60px;
@@ -633,7 +617,7 @@
   #scrollToTopBtn.show {
     right: 15px;
   } */
-}
+
 
 
 
